@@ -1,0 +1,196 @@
+@import "./_base"
+
+// ここからSASS
+
+html
+    font-size: $--font-size-base
+body
+    font-size: $--font-size-m
+    line-height: $--line-height-normal
+    font-family: $--font-family-ja
+header
+    display: flex
+    font-family: $--font-family-en
+    justify-content: space-between
+    @include pc
+        width: 96rem
+        height: 5.8rem
+        margin: 0 auto
+    @include tab
+        width: 64.75rem
+        height: 5.8rem
+        margin: 0 auto
+    @include sp
+        width: 33.5rem
+        height: 5.8rem
+        margin: 0 auto
+    img.logo
+        padding: 18px 0
+        width: 100%
+        height: auto
+        max-width: 110.4px
+        min-height: 20.6px
+    .h-pc,.h-sp
+        ul
+            display: flex
+        li
+            padding: 18px 27px 
+    @include pc
+        .h-pc
+            display: block
+        .h-sp
+            display: none
+    @include tab
+        .h-pc
+            display: none
+        .h-sp
+            display: block
+    @include sp
+        .h-pc
+            display:  none
+        .h-sp
+            display: none
+.keyVisual
+    font-family: $--font-family-en
+    font-weight: bold
+.copy
+    @include pc
+        padding: 13.9rem 0 18.2rem 45.8rem 
+    @include tab
+        padding: 16.55rem 0 15rem 20rem
+    @include sp
+        padding: 19.2rem 0 0 0
+    color: $--color-base
+    strong
+        line-height: 5.4rem
+        @include pc
+            font-size: 6.8rem
+        @include tab
+            font-size: 5.65rem
+        @include sp
+            font-size: 4.5rem
+    p
+
+        @include pc
+            font-size: 2.0rem
+            padding: 2.1rem 0
+        @include tab
+            font-size: 1.9rem
+            padding: 1.75rem 0
+        @include sp
+            font-size: 1.8rem
+            padding: 1.4rem 0
+            letter-spacing: 0.5rem
+.hero
+    @include pc
+        .v-pc
+            background-image: url(../../images/keyVisual_pc.png)
+            background-size: cover
+            width: 100%
+            height: 56rem
+            position: absolute
+            z-index: -99
+            margin: 0
+        .v-sp
+            display: none
+    @include tab
+        .v-pc
+            background-image: url(../../images/keyVisual_pc.png)
+            background-size: cover
+            width: 100%
+            height: 56rem
+            position: absolute
+            z-index: -99
+            margin: 0
+        .v-sp
+            display: none
+    @include sp
+        .v-sp
+            background-image: url(../../images/keyVisual_sp.png)
+            background-size: cover
+            background-repeat: no-repeat
+            width: 100%
+            height: 41.0rem
+            position: absolute
+            z-index: -99
+            margin: 0
+        .v-pc
+            display: none
+main
+    @include pc
+        width: 96rem
+        height: auto
+        margin: 0 auto
+    @include tab
+        width: 64.75rem
+        height: auto
+        margin: 0 auto
+    @include sp
+        width: 33.5rem
+        height: auto
+        margin: 0 auto
+.newsHeader
+    color: $--color-base
+    background-color: $--color-main-900
+    font-family: $--font-family-en
+    font-weight: bold
+    align-items: center
+    @include pc
+        display: flex
+        justify-content: center
+        padding: 2.2rem 4.0rem
+    @include tab
+        display: flex
+        justify-content: center
+        padding: 2.2rem 2.0rem
+    @include sp
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        padding: 1.4rem 2rem
+    strong
+        padding: 0 2.8rem 0 0
+        @include tab
+            padding: 0 1.0rem 0 0
+    span.vertical
+        background-color: $--color-base
+        width: 0.1rem
+        @include pc
+            height: 2.5rem
+        @include tab
+            height: 2.5rem
+        @include sp
+            height: 1.63rem
+    time
+        padding: 0 1.6rem 0 2.2rem
+        @include tab
+            padding: 0 0.6rem 0 0.8rem
+    strong,time
+        @include pc
+            font-size: $--font-size-titleS
+        @include tab
+            font-size: $--font-size-l
+        @include sp
+            font-size: $--font-size-sm
+    p
+        @include pc
+            padding: 0 3.1rem 0 0 
+            font-size: $--font-size-l
+        @include tab
+            padding: 0 1.4rem 0 0 
+            font-size: $--font-size-m
+        @include sp
+            padding: 1.0rem 0 0 0 
+            font-size: $--font-size-s
+    span.toggle
+        background-image: url(../../images/toggle.svg)
+        width: 3.1rem
+        height: 1.1rem
+        background-repeat: no-repeat
+        @include pc
+            display: block
+        @include tab
+            display: block
+            width: 4.1rem
+        @include sp
+            display: none

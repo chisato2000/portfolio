@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30.525" height="9.957" viewBox="0 0 30.525 9.957">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="グループ_9" data-name="グループ 9" transform="translate(-1091.5 -3236.543)">
+    <path id="線_2" data-name="線 2" class="cls-1" d="M28.416,1H0A1,1,0,0,1-1,0,1,1,0,0,1,0-1H28.416a1,1,0,0,1,1,1A1,1,0,0,1,28.416,1Z" transform="translate(1092.5 3245.5)"/>
+    <path id="パス_1" data-name="パス 1" class="cls-1" d="M8.525,8.957a1,1,0,0,1-.682-.269L-.682.731A1,1,0,0,1-.731-.682,1,1,0,0,1,.682-.731L9.207,7.225a1,1,0,0,1-.683,1.731Z" transform="translate(1112.5 3237.543)"/>
+  </g>
+</svg>
